@@ -1,0 +1,302 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="a">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="a" style=" color:black">
+			<h1>kt wiz 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="kt.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">★ kt wiz 소개 ★</a></li>
+				<li><a href="#movie" data-rel="dialog">☆ kt wiz 영상 ☆</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">★ kt wiz 선수 응원가 ★</a></li>
+				<li><a href="#gallery">☆ kt wiz 사진 ☆</a></li>
+				<li><a href="#baseball">★ 당신은 야구팬이십니까 ★</a></li>
+				<li><a href="#page1">☆ 만든이 ☆</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a" style="background: aliceblue; color=pink;">
+			<h1>케이티위즈_김수진</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>kt wiz 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="vicddory.png" width=400px>
+				</div>			
+			<div data-role="collapsible-set" data-theme="a" data-content-theme="a" style="background: aliceblue;">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>개요</h3>
+					<p>KBO 리그의 막내 프로야구단. 연고지는 경기도 수원시.</br>
+						역대 4번째 신생팀이자 본격적으로 KBO 리그 10구단 체제를 연 구단이다.</br>
+						2014년 시즌 KBO 퓨처스리그에 참가하고, 2015년 시즌부터 본격적인 1군 페넌트레이스에 참가하였다.</br>
+						모기업은 kt며, 구단주는 kt의 회장인 황창규가 겸임한다.</br>
+						대표이사(사장)는 김영수. 홈 구장은 수원종합운동장 내에 있는 수원 케이티 위즈 파크이다.
+						</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>마스코트</h3>
+					<p><img src="vic.png" width=70px> <img src="ddory.png" width=70px></br>
+						마스코트 탄생 스토리. 수원야구장에 살고 있던 작은 몬스터 두 마리가 어느 날 전설의 마법 심볼을 갖게 되면서 kt wiz를 승리로 이끄는 응원단장 힘의 'Vic'과 스피드의 'ddory'가 된다는 스토리이다.</br>
+						빅은 이니셜 심볼을 부착했고 공격형 파워를 상징하며, 또리는 이미지 심볼을 부착했고 수비를 상징한다. 
+						</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>팀명</h3>
+					<p>팀명은 공모전을 통해 2013년 5월 7일 발표되었다. kt wiz.</br>
+						Wizard(마법사)에서 따온 말로, 뛰어난 재능을 지닌 사람이라는 뜻을 가지고 있다.</br>
+						마법같은 야구운영을 해 보이겠다는 뜻에서 지었다고 한다.</br>
+						여담으로 공모전을 한다고 하자 트위터 등에서는 kt 호구스, kt 약정스, kt 동정스 등 kt를 까는 다채로운 발언들이 나타난 바 있다.
+						</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h1>케이티위즈_김수진</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>	
+			<h1>kt wiz 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e"><strong>전설의 한만두</strong></div><br/>
+			<li><iframe width="560" height="315" src="https://www.youtube.com/embed/xr5LQiO-GNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-e"><strong>3연속 위닝시리즈! 덕아웃 분위기 무엇?</strong></div><br/>
+			<li><iframe width="560" height="315" src="https://www.youtube.com/embed/4azgFthc5AM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h1>케이티위즈_김수진</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>	
+			<h1>kt wiz 선수 응원가</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e"><strong>2019 kt wiz 응원가 총정리!</strong></div><br/>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1ov6ThLwAYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+			<img src="kimjuil.png" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>kt wiz 선수 응원가</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e"><strong>kt위즈 2019 응원가 신곡 현장직캠</strong></div><br/>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/cX77ztkHcYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+			<img src="vicddory2.png" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>케이티위즈 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="kt1.png" rel="external"><img src="kt1.png" /></a></li>	
+				<li><a href="kt2.png" rel="external"><img src="kt2.png" /></a></li>	
+				<li><a href="kt3.png" rel="external"><img src="kt3.png" /></a></li>	
+				<li><a href="kt4.png" rel="external"><img src="kt4.png" /></a></li>	
+				<li><a href="kt5.png" rel="external"><img src="kt5.png" /></a></li>	
+				<li><a href="kt6.png" rel="external"><img src="kt6.png" /></a></li>	
+				<li><a href="kt7.png" rel="external"><img src="kt7.png" /></a></li>	
+				<li><a href="kt8.png" rel="external"><img src="kt8.png" /></a></li>	
+				<li><a href="kt9.png" rel="external"><img src="kt9.png" /></a></li>	 
+				<li><a href="kt10.png" rel="external"><img src="kt10.png" /></a></li>    
+				<li><a href="kt11.png" rel="external"><img src="kt11.png" /></a></li>   
+				<li><a href="kt12.png" rel="external"><img src="kt12.png" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>케이티위즈_김수진</h1>
+		</div>		
+	</div>
+	
+		<div data-role="page" id="baseball" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>당신은 야구팬이십니까?</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="logo.png" width=400px>
+				</div>	
+				
+		<div data-role="fieldcontain">
+			<label for="age1">좋아하는 야구팀</label>
+			<select name="base" id="base" data-inline="true">
+				<option value="">선택하세요</option>
+				<optgroup>
+					<option value="num1">SK와이번스</option>
+					<option value="num2">두산베어스</option>
+					<option value="num3">nc다이노스</option>
+					<option value="num4">키움히어로즈</option>
+					<option value="num5">LG트윈스</option>
+					<option value="num6">한화이글스</option>
+					<option value="num7">kt위즈</option>
+					<option value="num8">삼성라이온즈</option>
+					<option value="num9">기아타이거즈</option>
+					<option value="num10">롯데자이언츠</option>
+				</optgroup>
+			</select>
+		</div>	
+			<fieldset data-role="controlgroup" data-type="horizontal" >	
+			<legend>성별</legend>	
+			<input type="radio" name="gender" id="gender1" value="1" checked="checked"/>	
+			<label for="gender1">여성</label>
+			<input type="radio" name="gender" id="gender2" value="2"/>
+			<label for="gender2">남성</label>			
+		</fieldset>		
+		<div data-role="fieldcontain">
+			<label for="age1">나이</label>
+			<input type="range" name="age" id="age1" value="20" min="0" max="100"/>
+		</div>
+		<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+			<legend>야구를 좋아하게 된 이유</legend>
+			<input type="checkbox" name="type1" id="type1" value="1/">
+			<label for="type1">부모님이 팬인경우</label>
+			<input type="checkbox" name="type2" id="type2" value="2" checked="checked" />
+			<label for="type2">우연히 직관갔다가 좋아하게되는경우</label>
+			<input type="checkbox" name="type3" id="type3" value="3"/>
+			<label for="type3">아는사람에 의해 알게된경우</label>
+			<input type="checkbox" name="type4" id="type4" value="4"/>
+			<label for="type4">기타</label>
+		</fieldset>
+		</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h1>케이티위즈_김수진</h1>
+		</div>		
+	</div>
+	
+		<div data-role="page" id="page1" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>만든이</h1>
+		</div>
+				
+		<div data-role="content">
+			<img align="right" width=20% src="mypic.jpg"/>
+			<h2>김수진</h2>
+			<h3>/KIM SUJIN</h3>
+			<a href="#page2" data-transition="flip" data-role="button" data-inline="true">약력</a>
+			<a href="#page3" data-transition="pop" data-role="button" data-inline="true">학력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="https://www.google.com/maps/@37.1939674,127.0267289,21z?hl=ko" target="_blank">집주소</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+	</div>
+	<div data-role="page" id="page2" data-title=”두번째페이지”>
+		<div data-role="header">
+			<h1>약력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			약력
+			<ul>
+				<li> 생년월일 : 1999년 04월 14일 </li>
+				<li> 주소 : 오산시 양산동 한신대 133번길 </li>
+				<li> 연락처 : 010.4505.4648 </li>
+				<li> 이메일 : tnwls9937@hs.ac.kr </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page3" data-transition="pop" data-role="button" data-inline="true">학력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+	<div data-role="page" id="page3" data-title=”세번째페이지”>
+		<div data-role="header">
+			<h1>학력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			학력
+			<ul>
+				<li> 2018.2 동문고등학교 졸업 </li>
+				<li> 2022.2  한신대학교 컴퓨터공학부 졸업</li>
+				<li> 2022.3~ 컴퓨터공학 대학원 재학중 </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page2" data-transition="pop" data-role="button" data-inline="true">약력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+		<div data-role="page" id="page4" data-title=”네번째페이지”>
+		<div data-role="header">
+			<h1>경력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			경력
+			<ul>
+				<li> ~ 2019.2 애견샵 알바 </li>
+				<li> 2019.3 ~ 한신대학교 교수학습지원센터 근로장학생 </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page2" data-transition="pop" data-role="button" data-inline="true">약력</a>
+			<a href="#page3" data-transition="slideup" data-role="button" data-inline="true">학력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+		
+	</div>
+</div>	
+</body>
+</html>

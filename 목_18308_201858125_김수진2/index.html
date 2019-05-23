@@ -30,6 +30,8 @@
 				<li><a href="#movie" data-rel="dialog">☆ kt wiz 영상 ☆</a></li>
 				<li><a href="#wizard3-1" data-rel="dialog">★ kt wiz 선수 응원가 ★</a></li>
 				<li><a href="#gallery">☆ kt wiz 사진 ☆</a></li>
+				<li><a href="#baseball">★ 당신은 야구팬이십니까 ★</a></li>
+				<li><a href="#page1">☆ 만든이 ☆</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed" data-theme="a" style="background: aliceblue; color=pink;">
@@ -149,6 +151,151 @@
 		<div data-role="footer" data-position="fixed" data-theme="b">
 			<h1>케이티위즈_김수진</h1>
 		</div>		
+	</div>
+	
+		<div data-role="page" id="baseball" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>당신은 야구팬이십니까?</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="logo.png" width=400px>
+				</div>	
+				
+		<div data-role="fieldcontain">
+			<label for="age1">좋아하는 야구팀</label>
+			<select name="base" id="base" data-inline="true">
+				<option value="">선택하세요</option>
+				<optgroup>
+					<option value="num1">SK와이번스</option>
+					<option value="num2">두산베어스</option>
+					<option value="num3">nc다이노스</option>
+					<option value="num4">키움히어로즈</option>
+					<option value="num5">LG트윈스</option>
+					<option value="num6">한화이글스</option>
+					<option value="num7">kt위즈</option>
+					<option value="num8">삼성라이온즈</option>
+					<option value="num9">기아타이거즈</option>
+					<option value="num10">롯데자이언츠</option>
+				</optgroup>
+			</select>
+		</div>	
+			<fieldset data-role="controlgroup" data-type="horizontal" >	
+			<legend>성별</legend>	
+			<input type="radio" name="gender" id="gender1" value="1" checked="checked"/>	
+			<label for="gender1">여성</label>
+			<input type="radio" name="gender" id="gender2" value="2"/>
+			<label for="gender2">남성</label>			
+		</fieldset>		
+		<div data-role="fieldcontain">
+			<label for="age1">나이</label>
+			<input type="range" name="age" id="age1" value="20" min="0" max="100"/>
+		</div>
+		<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+			<legend>야구를 좋아하게 된 이유</legend>
+			<input type="checkbox" name="type1" id="type1" value="1/">
+			<label for="type1">부모님이 팬인경우</label>
+			<input type="checkbox" name="type2" id="type2" value="2" checked="checked" />
+			<label for="type2">우연히 직관갔다가 좋아하게되는경우</label>
+			<input type="checkbox" name="type3" id="type3" value="3"/>
+			<label for="type3">아는사람에 의해 알게된경우</label>
+			<input type="checkbox" name="type4" id="type4" value="4"/>
+			<label for="type4">기타</label>
+		</fieldset>
+		</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h1>케이티위즈_김수진</h1>
+		</div>		
+	</div>
+	
+		<div data-role="page" id="page1" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>만든이</h1>
+		</div>
+				
+		<div data-role="content">
+			<img align="right" width=20% src="mypic.jpg"/>
+			<h2>김수진</h2>
+			<h3>/KIM SUJIN</h3>
+			<a href="#page2" data-transition="flip" data-role="button" data-inline="true">약력</a>
+			<a href="#page3" data-transition="pop" data-role="button" data-inline="true">학력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="https://www.google.com/maps/@37.1939674,127.0267289,21z?hl=ko" target="_blank">집주소</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+	</div>
+	<div data-role="page" id="page2" data-title=”두번째페이지”>
+		<div data-role="header">
+			<h1>약력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			약력
+			<ul>
+				<li> 생년월일 : 1999년 04월 14일 </li>
+				<li> 주소 : 오산시 양산동 한신대 133번길 </li>
+				<li> 연락처 : 010.4505.4648 </li>
+				<li> 이메일 : tnwls9937@hs.ac.kr </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page3" data-transition="pop" data-role="button" data-inline="true">학력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+	<div data-role="page" id="page3" data-title=”세번째페이지”>
+		<div data-role="header">
+			<h1>학력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			학력
+			<ul>
+				<li> 2018.2 동문고등학교 졸업 </li>
+				<li> 2022.2  한신대학교 컴퓨터공학부 졸업</li>
+				<li> 2022.3~ 컴퓨터공학 대학원 재학중 </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page2" data-transition="pop" data-role="button" data-inline="true">약력</a>
+			<a href="#page4" data-transition="slideup" data-role="button" data-inline="true">경력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+		<div data-role="page" id="page4" data-title=”네번째페이지”>
+		<div data-role="header">
+			<h1>경력</h1>
+			</div>
+		<div data-role="content">
+			<li>
+			경력
+			<ul>
+				<li> ~ 2019.2 애견샵 알바 </li>
+				<li> 2019.3 ~ 한신대학교 교수학습지원센터 근로장학생 </li>
+				</ul>
+			</li>
+			<a href="#page1" data-transition="flip" data-role="button" data-inline="true">메인</a>
+			<a href="#page2" data-transition="pop" data-role="button" data-inline="true">약력</a>
+			<a href="#page3" data-transition="slideup" data-role="button" data-inline="true">학력</a>
+		</div>
+		<div data-role="footer">
+			<h4>Copyright &copy; kim sujin</h4>
+		</div>
+		</div>
+		
 	</div>
 </div>	
 </body>
